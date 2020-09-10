@@ -1,0 +1,21 @@
+<h3>Update Curso</h3>
+<div [hidden]="submitted" style="width: 400px;">
+    <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label for="name">Nome</label>
+            <input type="text" class="form-control" id="nome" required [(ngModel)]="curso.nome" name="nome">
+        </div>
+
+        <div class="form-group">
+            <label for="name">Tipo</label>
+            <input type="text" class="form-control" id="tipo" required [(ngModel)]="curso.tipo" name="tipo">
+        </div>
+
+        <div class="form-group">
+            <label for="name">Descrição</label>
+            <input type="text" class="form-control" id="desc" required [(ngModel)]="curso.desc" name="desc">
+        </div>
+
+        <button type="submit" class="btn btn-success">Submit</button>
+    </form>
+</div>
